@@ -1,0 +1,35 @@
+{
+  "name": "generator-marko-starter",
+  "version": "1.1.1",
+  "description": "yeoman generator for marko-starter projects. Adds utility components and scripts to publish to github ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "app/index.js",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "marko-starter"
+  ],
+  "repository": {
+    "url": "https://github.com/rtalwar26/generator-marko-starter"
+  },
+  "author": {
+    "name": "Rajat Talwar",
+    "email": "cuterajat26@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^3.1.1",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2",
+    "mkdirp": "*",
+    "glob": "*"
+  },
+  "preferGlobal": true,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -1,0 +1,14 @@
+pages:
+  stage: deploy
+  script:
+
+  - ls -al
+  - pwd
+  - ls -al docs/
+  - cp -r docs/ public
+
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
