@@ -57,10 +57,6 @@ http://localhost:8080/mobile
 > For example usage have a look at `src/routes/hello/index.marko`
 ## Build and deploy to github pages
 
-```shell
-npm run build:deploy
-git push -u origin master
-```
 Under package.json change `baseurl` to `/<your_github_repo_name>`
 
 Example
@@ -72,6 +68,14 @@ if you have a repo at https://github.com/jacob26/**sample-web-app** then **packa
 
   "baseurl": "/<sample-web-app>"
 ```
+
+Then 
+
+```shell
+npm run build:deploy
+git push -u origin master
+```
+
 
 Your website will be served at **https://jacob26.github.io/sample-web-app**
 
@@ -83,11 +87,6 @@ Your website will be served at **https://jacob26.github.io/sample-web-app**
 
 > .gitlab-ci.yml is already included so no extra steps are needed
 
-
-```shell
-npm run build:deploy
-git push -u origin master
-```
 Under package.json change `baseurl` to `/<your_github_repo_name>`
 
 Example
@@ -97,5 +96,13 @@ if you have a repo at https://github.com/jacob26/**sample-web-app** then **packa
 ```json
   "baseurl": "/<sample-web-app>"
 ```
+
+Then 
+
+```shell
+npm run build:deploy
+git push -u origin master
+```
+
 
 Your website will be served at **https://jacob26.gitlab.io/sample-web-app**
