@@ -1,12 +1,13 @@
 .git/
 node_modules/
-dist/
+/dist
 .cache/
 *.log
 *.bak.js
 *.bak
-*.marko.js
 .DS_STORE
 dump.rdb
 .marko-devtools/
 package-lock.json
+src/**/*.marko.js
+!/docs
