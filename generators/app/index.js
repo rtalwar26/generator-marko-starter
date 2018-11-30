@@ -47,6 +47,7 @@ module.exports = class extends Generator {
                     this.destinationPath(`${this.name}`, 'gitlab-ci.yml'),
                     this.destinationPath(`${this.name}`, '.gitlab-ci.yml')
                 );
+                
             }
         };
     }
