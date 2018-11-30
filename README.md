@@ -1,7 +1,7 @@
 ### Generator Marko Starter
 
 
-Yeoman generator to generate a marko-starter project. `mobile` route uses (Framework7)[http://framework7.io/]
+Yeoman generator to generate a marko-starter project. `mobile` route uses [Framework7](http://framework7.io/)
 
 > Make sure you have marko-starter installed globally 
 
