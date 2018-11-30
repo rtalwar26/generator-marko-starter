@@ -50,7 +50,7 @@ http://localhost:8080/mobile
 > make sure u use **\<a-rel\>** tag 
 
 ```html
-<a-rel href="/mobile"></a-rel>
+<a-rel href="/mobile"><@content>Link</@content></a-rel>
 
 ```
 
