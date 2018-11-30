@@ -91,10 +91,10 @@ Under package.json change `baseurl` to `/<your_github_repo_name>`
 
 Example
 
-if you have a repo at https://github.com/jacob26/**sample-web-app** then **package.json** should look like
+if you have a repo at https://github.com/jacob26/sample-web-app then **package.json** should look like
 
 ```json
-  "baseurl": "/<sample-web-app>"
+  "baseurl": "/sample-web-app"
 ```
 
 Then 
