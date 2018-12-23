@@ -7,16 +7,39 @@
     "url": "https://github.com/marko-js-samples/marko-starter-demo"
   },
   "license": "MIT",
+  "babel": {
+    "plugins": [
+      "transform-es2015-literals",
+      "transform-es2015-template-literals",
+      "transform-es2015-arrow-functions",
+      "transform-es2015-classes",
+      "transform-es2015-block-scoped-functions",
+      "transform-es2015-block-scoping"
+    ]
+  },
   "devDependencies": {
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoped-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-es2015-literals": "^6.22.0",
+    "babel-plugin-transform-es2015-template-literals": "^6.22.0",
     "del": "^3.0.0",
     "eslint": "^4.2.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-prettier": "^2.1.2",
     "gulp": "~4.0.0",
-    "prettier": "^1.5.2"
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "prettier": "^1.5.2",
+    "zip-dir": "^1.0.2"
   },
   "dependencies": {
+    "eventemitter3": "^3.1.0",
     "framework7": "^3.5.2",
+    "framework7-icons": "^2.0.3",
+    "lasso-babel-transform": "^1.0.2",
+    "lodash": "^4.17.11",
     "marko": "^4.2.4",
     "marko-starter": "^1.0.0"
   },
@@ -28,7 +51,8 @@
     "test": "npm run lint",
     "prettier": "prettier src/**/*.{js,css,less} *.js --write",
     "build:deploy": "npx gulp",
-    "build:win": "npx gulp"
+    "build:win": "npx gulp",
+    "build:mobile": "npm version patch && npx gulp mobile"
   },
   "eslintConfig": {
     "extends": [
@@ -47,5 +71,5 @@
     "*.marko.js"
   ],
   "private": true,
-  "baseurl": "/<github-repo-name>"
+  "baseurl": "/git-repo-name"
 }
