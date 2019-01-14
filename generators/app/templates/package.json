@@ -52,6 +52,7 @@
     "prettier": "prettier src/**/*.{js,css,less} *.js --write",
     "build:deploy": "npx gulp",
     "build:win": "npx gulp",
+    "build:gitlab": "npx gulp",
     "build:mobile": "npm version patch && npx gulp mobile"
   },
   "eslintConfig": {
