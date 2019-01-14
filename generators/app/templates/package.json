@@ -40,8 +40,8 @@
     "framework7-icons": "^2.0.3",
     "lasso-babel-transform": "^1.0.2",
     "lodash": "^4.17.11",
-    "marko": "^4.2.4",
-    "marko-starter": "^1.0.0"
+    "marko": "^4.14.12",
+    "marko-starter": "^2.0.4"
   },
   "scripts": {
     "start": "marko-starter server",
