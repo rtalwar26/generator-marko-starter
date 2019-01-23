@@ -1,7 +1,10 @@
 const fs = require("fs");
+const path = require('path');
+
 const packageConfig = JSON.parse(fs.readFileSync("./package.json", "utf8"));
 const isProduction = process.env.NODE_ENV && (process.env.NODE_ENV.trim() === 'production');
 const isGithubPublish = process.env.GITHUB_PUBLISH && (process.env.GITHUB_PUBLISH.trim() === 'true');
+let isCordovaPublish = process.env.CORDOVA_BUILD && (process.env.CORDOVA_BUILD.trim() === 'true');
 const isAndroidPublish = process.env.ANDROID_APP && (process.env.ANDROID_APP.trim() === 'true');
 const project_name = "marko-starter"
 
@@ -16,7 +19,7 @@ module.exports = require("marko-starter").projectConfig({
         }
       }]
     },
-    outputDir: isGithubPublish || isAndroidPublish ? `dist/static` : '.cache/static',
+    outputDir: isGithubPublish || isAndroidPublish || isCordovaPublish ? path.resolve(`dist`, `static`) : path.resolve('.cache', 'static'),
     bundlingEnabled: isProduction,
     "bundles": [{
       "name": "framework7",
