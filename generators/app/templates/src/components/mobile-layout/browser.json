@@ -1,7 +1,7 @@
 {
     "dependencies":[
-        {"path":"framework7/js/framework7.js"},
-        {"path":"framework7/css/framework7.css"}
+        {"path":"framework7/js/framework7.bundle.min.js"},
+        {"path":"framework7/css/framework7.bundle.min.css"}
      
     ]
 }
