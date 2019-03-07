@@ -43,6 +43,40 @@ let config = require('./routes');
 
     });
     window.app = app;
+    let thisComp = this;
+    const informChild = (pageName, eventHandler) => {
+      let page = thisComp.getComponent(pageName);
+      page && (typeof page[eventHandler] === 'function') && page[eventHandler]();
+    }
+    setTimeout(() => {
+
+      let router = app.views.main.router;
+
+      router.clearPreviousHistory();
+
+
+      app.on('pageBeforeIn', (page) => {
+
+        informChild(page.name, 'pageBeforeIn');
+      })
+      app.on('pageAfterIn', (page) => {
+        informChild(page.name, 'pageAfterIn');
+
+      })
+
+      app.on('pageBeforeOut', (page) => {
+        informChild(page.name, 'pageBeforeOut');
+
+      })
+      app.on('pageAfterOut', (page) => {
+        informChild(page.name, 'pageAfterOut');
+
+      })
+
+    }, 1);
+
+
+
   }
 }
 

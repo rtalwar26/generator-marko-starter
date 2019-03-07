@@ -37,7 +37,7 @@
   "dependencies": {
     "eventemitter3": "^3.1.0",
     "framework7": "^4.1.0",
-    "framework7-icons": "^2.0.3",
+    "framework7-icons": "^2.2.0",
     "lasso-babel-transform": "^1.0.2",
     "lodash": "^4.17.11",
     "marko": "^4.15.3",
