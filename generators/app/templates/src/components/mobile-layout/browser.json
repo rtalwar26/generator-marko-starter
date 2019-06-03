@@ -1,8 +1,13 @@
 {
-    "dependencies":[
-        {"path":"framework7/js/framework7.bundle.min.js"},
-        {"path":"framework7/css/framework7.bundle.min.css"},
-        {"path": "framework7-icons/css/framework7-icons.css"}
-     
+    "dependencies": [
+        {
+            "path": "framework7/js/framework7.bundle.min.js"
+        },
+        {
+            "path": "framework7/css/framework7.bundle.min.css"
+        },
+        {
+            "path": "framework7-icons/css/framework7-icons.css"
+        }
     ]
 }

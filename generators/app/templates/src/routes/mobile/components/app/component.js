@@ -1,5 +1,5 @@
 let config = require('./routes');
- module.exports  = class {
+module.exports = class {
 
   onCreate() {
 
@@ -10,8 +10,8 @@ let config = require('./routes');
     this.addBackHandlers();
   }
 
-  addBackHandlers(){
-    Dom7("a.move-back").on('click',()=>{
+  addBackHandlers() {
+    Dom7("a.move-back").on('click', () => {
       window.app.views.main.router.back();
     })
   }
@@ -39,7 +39,7 @@ let config = require('./routes');
     var mainView = app.views.create('.view-main', {
       stackPages: true,
       pushState: true,
-      url:"/mobile"
+      url: "/mobile"
 
     });
     window.app = app;
@@ -52,7 +52,8 @@ let config = require('./routes');
 
       let router = app.views.main.router;
 
-      router.clearPreviousHistory();
+      informChild(router.currentRoute.name, 'pageAfterIn');
+      informChild(router.currentRoute.name, 'pageBeforeIn');
 
 
       app.on('pageBeforeIn', (page) => {
